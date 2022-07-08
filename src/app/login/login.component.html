@@ -1,0 +1,40 @@
+<div class="login-container">
+  <img class="film" src="assets\images\film.png" alt="" />
+  <div class="logo">Rotten Strawberries</div>
+  <div class="desc">
+    Rotten Strawberries is an American review-aggregation website for film and
+    television. The company was launched in August 1998 by three undergraduate
+    students at the University of California, Berkeley: Senh Duong, Patrick Y.
+    Lee, and Stephen Wang. Rotten Less than 60% of reviews for a movie or TV
+    show are positive. Certified fresh A special distinction awarded to the best
+    reviewed movies and TV Shows. Fresh At least 60% of reviews for a movie or
+    TV show are positive. Rotten Less than 60% of reviews for a movie or TV show
+    are positive. On the review aggregator website Rotten Tomatoes, a film has a
+    rating of 100% if each professional review recorded by the website is
+    assessed as positive rather than negative.
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="">Username</label>
+      <input
+        type="text"
+        name="username"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="">Password</label>
+      <input
+        type="password"
+        name="password"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+      <div class="error">{{ errorMsg }}</div>
+      <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
