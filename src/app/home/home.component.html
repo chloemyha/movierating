@@ -49,20 +49,15 @@
     </div>
   </div>
   <div class="popular-movies">
-    <div class="top">
-      <h4>All Time Popular</h4>
-      <div class="view-all">View All</div>
-    </div>
-    <div class="movie-thumbnail">
-      <div class="movie" *ngFor="let movie of popularMovies">
-        <div class="name">{{ movie.name }}</div>
-        <div class="rating">
-          <span class="rating-value">{{ movie.rating }}</span>
-          <app-star-rating
-            [rating]="movie.rating"
-            [isReadOnly]="true"
-          ></app-star-rating>
-        </div>
+    <h4> ALL TIME POPULAR</h4>
+    <div class="movie" *ngFor="let movie of popularMovies">
+      <div class="name">{{ movie.name }}</div>
+      <div class="rating">
+        <span class="rating-value">{{ movie.rating }}</span>
+        <app-star-rating
+          [rating]="movie.rating"
+          [isReadOnly]="true"
+        ></app-star-rating>
       </div>
     </div>
   </div>
