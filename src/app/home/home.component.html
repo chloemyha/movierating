@@ -49,7 +49,8 @@
     </div>
   </div>
   <div class="popular-movies">
-    <h4> ALL TIME POPULAR</h4>
+    <h4>ALL TIME POPULAR</h4>
+    <div class="movies">
     <div class="movie" *ngFor="let movie of popularMovies">
       <div class="name">{{ movie.name }}</div>
       <div class="rating">
@@ -60,5 +61,6 @@
         ></app-star-rating>
       </div>
     </div>
+    <div class="view-all">View all</div>
   </div>
 </div>
